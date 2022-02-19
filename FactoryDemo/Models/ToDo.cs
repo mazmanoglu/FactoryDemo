@@ -28,7 +28,7 @@ namespace FactoryDemo.Models
         {
             IsDone = true;
             //Logger logger = new Logger();
-            _logger.Log($"Log activity closed on {ToDoName}, total worked hours {Hours}");
+            _logger.Log($"Log activity closed for {ToDoName}, total worked hours {Hours}");
 
             //Emailer emailer = new Emailer();
             _messageSender.SendMessage(Student, $"Subject: The Work {ToDoName} is finished, with total worked hours {Hours}");
